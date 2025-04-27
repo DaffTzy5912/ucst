@@ -81,7 +81,7 @@
                 const data = await response.json();
 
                 if (data.status) {
-                    const user = data.data;
+                    const user = data.result; // PERBAIKAN DI SINI
 
                     resultDiv.innerHTML = `
                         <img src="${user.avatar}" alt="Avatar" width="100" height="100">
